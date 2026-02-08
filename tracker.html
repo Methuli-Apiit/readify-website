@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - explore books by genre, title and author">
+  <title>Readify | Book Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+  <section class="hero-card">
+    <h2>Reading Progress Tracker</h2>
+    <p class="muted">Track your reading and see how far you’ve come.</p>
+
+    <form id="trackerForm" class="tracker-form">
+      <input id="totalPages" type="number" placeholder="Total pages" required>
+      <input id="pagesRead" type="number" placeholder="Pages read" required>
+      <input id="speed" type="number" placeholder="Pages per day" required>
+      <button type="submit" class="primary-btn">Update Progress</button>
+    </form>
+
+    <!-- RESULT AREA (MUST EXIST) -->
+    <div class="progress-box">
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+      <p id="progressText">Progress: 0%</p>
+      <p id="finishText" class="muted">Estimated days to finish: -</p>
+      <p id="finishDateText" class="muted"></p>
+      <p id="summaryText"></p>
+
+    </div>
+  </section>
+</main>
+
+
+
+  <footer>
+    <p>© 2026 Readify. Built using HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/tracker.js"></script>
+</body>
+</html>

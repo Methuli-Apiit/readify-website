@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - a simple reading companion website">
+  <title>Readify | Home</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <main class="container">
+  <section class="hero-card">
+    <h2>Welcome to Readify</h2>
+
+    <p class="small-label">Quote of the moment</p>
+    <p id="quote" class="quote">Reading is a window to the world.</p>
+
+    <div class="author-box">
+      <p class="small-label">Author of the Day</p>
+      <h3 id="authorName">Loading...</h3>
+      <p id="authorHint" class="muted"></p>
+    </div>
+
+    <div class="newsletter">
+      <p class="small-label">Newsletter</p>
+      <p class="muted">Get one short reading tip each week.</p>
+
+      <form id="newsletterForm" class="form-row">
+        <input id="emailInput" type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <p id="newsletterMsg" class="muted"></p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

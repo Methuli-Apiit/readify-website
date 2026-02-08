@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - explore books by genre, title and author">
+  <title>Readify | Book Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+  <section class="hero-card">
+    <h2>Feedback</h2>
+    <p class="muted">Send feedback to improve Readify. Your feedback is stored locally in your browser.</p>
+
+    <form id="feedbackForm" class="tracker-form">
+      <input id="fbName" type="text" placeholder="Your name" required>
+      <input id="fbEmail" type="email" placeholder="Your email" required>
+
+      <select id="fbType" required>
+        <option value="">Feedback type</option>
+        <option value="bug">Bug / Issue</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="other">Other</option>
+      </select>
+
+      <textarea id="fbMsg" placeholder="Write your feedback..." required></textarea>
+
+      <button type="submit" class="primary-btn">Submit Feedback</button>
+    </form>
+
+    <p id="fbStatus" class="muted"></p>
+    <div class="flow-status" style="margin-top:12px;">
+  <p class="muted">Last saved feedback:</p>
+  <p id="lastFeedback">No feedback saved yet.</p>
+</div>
+
+
+    <hr style="margin:18px 0; border:0; border-top:1px solid #e5e7eb;">
+
+    <h3>FAQ</h3>
+    <div class="faq">
+      <button class="faq-q" type="button">Does Readify save data online?</button>
+      <div class="faq-a">
+        <p>No. It uses localStorage, so data stays only in your browser.</p>
+      </div>
+
+      <button class="faq-q" type="button">Why do some filters show only one book?</button>
+      <div class="faq-a">
+        <p>Because the dataset is small for the assignment. The app shows a helpful message instead of repeating the same book.</p>
+      </div>
+
+      <button class="faq-q" type="button">Can I clear my saved data?</button>
+      <div class="faq-a">
+        <p>Yes. You can clear your browser site data, or we can add a “Reset” button later.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <p>© 2026 Readify. Built using HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>

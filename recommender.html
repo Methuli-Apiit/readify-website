@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - explore books by genre, title and author">
+  <title>Readify | Book Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+    <h2>Random Book Recommender</h2>
+<p class="muted">Choose a genre and length — I’ll suggest a book for you.</p>
+
+<div class="filters">
+  <select id="recGenre">
+    <option value="all">All genres</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="mystery">Mystery</option>
+    <option value="sci-fi">Sci-Fi</option>
+    <option value="self-help">Self-help</option>
+  </select>
+
+  <select id="recLength">
+    <option value="all">Any length</option>
+    <option value="short">Short (under 200 pages)</option>
+    <option value="medium">Medium (200–350 pages)</option>
+    <option value="long">Long (350+ pages)</option>
+  </select>
+
+  <button id="pickBtn" class="primary-btn" type="button">Pick a Book</button>
+  <button id="againBtn" class="primary-btn" type="button">Pick Again</button>
+</div>
+
+<div id="recCard" class="card hidden-card">
+  <h3 id="recTitle"></h3>
+  <p id="recAuthor" class="muted"></p>
+  <p id="recMeta" class="small-label"></p>
+  <p id="recSynopsis"></p>
+
+  <button id="saveRecBtn" class="primary-btn" type="button">
+    + Save to Reading List
+  </button>
+  <p id="recMsg" class="muted"></p>
+</div>
+ 
+</section>
+
+      <!-- Next step we add search + filters + cards here -->
+      <div id="explorerArea"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Readify. Built using HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/recommender.js"></script>
+</body>
+</html>

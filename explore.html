@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - explore books by genre, title and author">
+  <title>Readify | Book Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <h2>Book Explorer</h2>
+      <p class="muted">Search and filter books, then click a book to view details.</p>
+      <div class="filters">
+  <input id="searchInput" type="text" placeholder="Search by title or author...">
+
+  <select id="genreSelect">
+    <option value="all">All genres</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="mystery">Mystery</option>
+    <option value="sci-fi">Sci-Fi</option>
+    <option value="self-help">Self-help</option>
+  </select>
+</div>
+
+<div id="bookGrid" class="grid"></div>
+
+      <!-- Next step we add search + filters + cards here -->
+      <div id="explorerArea"></div>
+      <div class="filters">
+  <input id="searchInput" type="text" placeholder="Search by title or author...">
+
+  <select id="genreSelect">
+    <option value="all">All genres</option>
+    <option value="fantasy">Fantasy</option>
+    <option value="mystery">Mystery</option>
+    <option value="sci-fi">Sci-Fi</option>
+    <option value="self-help">Self-help</option>
+  </select>
+</div>
+
+<div id="bookGrid" class="grid"></div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Readify. Built using HTML, CSS and JavaScript.</p>
+  </footer>
+
+ 
+  <!-- BOOK DETAILS MODAL -->
+<div id="bookModal" class="modal hidden">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn"></button>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalAuthor" class="muted"></p>
+
+    <p id="modalSynopsis"></p>
+    <button id="saveToListBtn" class="primary-btn">+ Save to Reading List</button>
+    <p id="saveMsg" class="muted"></p>
+
+    <h4>Series</h4>
+    <ul id="modalSeries"></ul>
+
+    <h4>Ratings</h4>
+    <table class="rating-table">
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody id="modalRatings"></tbody>
+    </table>
+  </div>
+</div>
+<script src="js/utils.js"></script>
+<script src="js/explore.js"></script>
+</body>
+</html>

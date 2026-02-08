@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readify - explore books by genre, title and author">
+  <title>Readify | Book Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Readify</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+  <section class="hero-card">
+    <h2>Reading Flow</h2>
+    <p class="muted">A simple focus mode to track completed reading sessions.</p>
+
+    <div class="flow-controls">
+      <button id="startSessionBtn" class="primary-btn">Start Reading Session</button>
+      <button id="completeSessionBtn" class="primary-btn">Mark Session Completed</button>
+    </div>
+
+    <div class="flow-status">
+      <p id="sessionStatus">No active reading session.</p>
+      <p class="muted">Completed reading sessions:</p>
+      <h3 id="sessionCount">0</h3>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Readify. Built using HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/flow.js"></script>
+</body>
+</html>
