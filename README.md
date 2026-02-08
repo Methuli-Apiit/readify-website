@@ -1,1 +1,1 @@
-# readify-website
+# Readify
