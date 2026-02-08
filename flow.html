@@ -32,6 +32,23 @@
       <button id="startSessionBtn" class="primary-btn">Start Reading Session</button>
       <button id="completeSessionBtn" class="primary-btn">Mark Session Completed</button>
     </div>
+    <h3 style="margin-top:18px;">Cozy Sounds</h3>
+<p class="muted">Optional focus sounds (toggle on/off).</p>
+
+<div class="sound-controls">
+  <button id="soundToggleBtn" class="primary-btn" type="button">🔊 Sound: OFF</button>
+
+  <select id="soundType">
+    <option value="rain">Rain</option>
+    <option value="fire">Fireplace</option>
+    <option value="white">White Noise</option>
+  </select>
+
+  <input id="soundVolume" type="range" min="0" max="100" value="25">
+</div>
+
+<p id="soundMsg" class="muted"></p>
+
 
     <div class="flow-status">
       <p id="sessionStatus">No active reading session.</p>
@@ -49,3 +66,4 @@
   <script src="js/flow.js"></script>
 </body>
 </html>
+
