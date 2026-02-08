@@ -352,6 +352,56 @@ html, body{
 body{
   overflow-y: auto;
 }
+/* ===== Mobile Responsiveness Fixes ===== */
+@media (max-width: 600px){
+
+  /* make content use more of the screen */
+  .container{
+    width: 95%;
+    margin: 16px auto;
+  }
+
+  /* navbar: stack logo + links */
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* navbar links: wrap nicely */
+  .nav-links{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .nav-links li{
+    display: inline-block;
+  }
+
+  /* inputs & selects full width */
+  .filters input,
+  .filters select,
+  .tracker-form input,
+  .tracker-form select,
+  textarea{
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* buttons easier to tap */
+  .primary-btn,
+  .form-row button{
+    width: 100%;
+  }
+
+  /* modal fits small screens */
+  .modal-content{
+    width: 95%;
+    max-height: 85vh;
+  }
+}
+
 
 
 
