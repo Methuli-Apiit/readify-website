@@ -10,7 +10,7 @@
 body{
   background-image:
     linear-gradient(
-      rgba(135, 144, 224, 0.711),
+      rgba(135, 144, 224, 0.519),
       rgba(115, 176, 197, 0.92)
     ),
     url("img/wallpaper.jpg");
@@ -367,7 +367,7 @@ body{
     align-items: flex-start;
     gap: 10px;
   }
-
+  
   /* navbar links: wrap nicely */
   .nav-links{
     flex-wrap: wrap;
@@ -402,10 +402,10 @@ body{
   }
 }
 .sound-controls{
-  display:flex;
+  display: flex;
   gap:10px;
-  flex-wrap:wrap;
-  align-items:center;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top:10px;
 }
 
@@ -419,12 +419,13 @@ body{
 .sound-controls input[type="range"]{
   width: 180px;
 }
-logo a{
+/* LOGO LINK (all screen sizes) */
+.logo a{
   color: white;
   text-decoration: none;
 }
 
-.logo a:hover{
+.logo a: hover{
   opacity: 0.9;
 }
 
@@ -465,13 +466,6 @@ logo a{
     width: 100%;
   }
 }
-
-
-
-
-
-
-
 
 
 
