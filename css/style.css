@@ -10,8 +10,8 @@
 body{
   background-image:
     linear-gradient(
-      rgba(248,250,252,0.92),
-      rgba(248,250,252,0.92)
+      rgba(135, 144, 224, 0.711),
+      rgba(115, 176, 197, 0.92)
     ),
     url("img/wallpaper.jpg");
 
@@ -352,6 +352,7 @@ html, body{
 body{
   overflow-y: auto;
 }
+
 
 
 
