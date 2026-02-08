@@ -419,6 +419,58 @@ body{
 .sound-controls input[type="range"]{
   width: 180px;
 }
+logo a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo a:hover{
+  opacity: 0.9;
+}
+
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px){
+
+  /* navbar: stack logo + links */
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* navbar links: wrap nicely */
+  .nav-links{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .nav-links li{
+    display: inline-block;
+  }
+
+  /* inputs & selects full width */
+  .filters input,
+  .filters select,
+  .tracker-form input,
+  .tracker-form select,
+  textarea{
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* buttons easier to tap */
+  .primary-btn,
+  .form-row button{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
 
 
 
